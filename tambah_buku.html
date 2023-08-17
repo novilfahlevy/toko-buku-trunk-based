@@ -24,11 +24,17 @@
         </tr>
         <tr>
           <td colspan="2">
-            <button type="submit">Tambah</button>
+            <button type="submit">+ Tambah</button>
           </td>
         </tr>
       </table>
-
     </form>
+
+    <script>
+      document.getElementById('formTambahBuku').onsubmit = function(event) {
+        event.preventDefault()
+        alert('Menambah buku')
+      }
+    </script>
   </body>
 </html>
